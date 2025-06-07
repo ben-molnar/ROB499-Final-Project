@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>final_project</name>
+  <version>0.0.0</version>
+  <description>
+    ROS2 side of a final project for ROB499/599 at Oregon State University. This package
+    takes in an image taken by a camera mounted on a robot arm, finds the center of the image,
+    crops the image around its center, and finds the color of the object (if there is one) at\
+    the center of the image. The detected color is turned into a velocity command to be sent
+    to an Arduino using micro-ROS.
+  </description>
+  <maintainer email="molnarb@oregonstate.edu">Ben Molnar</maintainer>
+  <license>BSD-3-Clause</license>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>
